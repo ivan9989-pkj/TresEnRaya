@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="Forms.tablero">
+  <grid id="27dc6" binding="tabPanel" layout-manager="GridLayoutManager" row-count="4" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="5" vgap="5">
+    <margin top="10" left="10" bottom="10" right="10"/>
+    <constraints>
+      <xy x="59" y="67" width="687" height="867"/>
+    </constraints>
+    <properties>
+      <background color="-1"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <grid id="fb67f" layout-manager="GridLayoutManager" row-count="4" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="5" vgap="5">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="1" column="0" row-span="2" col-span="2" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-16777216"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="55fae" class="javax.swing.JLabel" binding="JLabel1">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                <minimum-size width="75" height="75"/>
+              </grid>
+            </constraints>
+            <properties>
+              <alignmentX value="1.0"/>
+              <background color="-1"/>
+              <doubleBuffered value="false"/>
+              <enabled value="true"/>
+              <focusCycleRoot value="false"/>
+              <focusTraversalPolicyProvider value="false"/>
+              <focusable value="true"/>
+              <font name="Tahoma" size="36" style="1"/>
+              <foreground color="-16777216"/>
+              <horizontalAlignment value="0"/>
+              <horizontalTextPosition value="0"/>
+              <inheritsPopupMenu value="false"/>
+              <opaque value="true"/>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="214ce" class="javax.swing.JLabel" binding="JLabel4">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                <minimum-size width="75" height="75"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-1"/>
+              <doubleBuffered value="false"/>
+              <enabled value="true"/>
+              <focusCycleRoot value="false"/>
+              <focusTraversalPolicyProvider value="false"/>
+              <focusable value="true"/>
+              <font name="Tahoma" size="36" style="1"/>
+              <foreground color="-16777216"/>
+              <horizontalAlignment value="0"/>
+              <horizontalTextPosition value="0"/>
+              <inheritsPopupMenu value="true"/>
+              <opaque value="true"/>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="4943" class="javax.swing.JLabel" binding="JLabel5">
+            <constraints>
+              <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                <minimum-size width="75" height="75"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-1"/>
+              <doubleBuffered value="false"/>
+              <enabled value="true"/>
+              <focusCycleRoot value="false"/>
+              <focusTraversalPolicyProvider value="false"/>
+              <focusable value="true"/>
+              <font name="Tahoma" size="36" style="1"/>
+              <foreground color="-16777216"/>
+              <horizontalAlignment value="0"/>
+              <horizontalTextPosition value="0"/>
+              <inheritsPopupMenu value="true"/>
+              <opaque value="true"/>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="d667" class="javax.swing.JLabel" binding="JLabel6">
+            <constraints>
+              <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="6" hsize-policy="7" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                <minimum-size width="75" height="75"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-1"/>
+              <doubleBuffered value="false"/>
+              <enabled value="true"/>
+              <focusCycleRoot value="false"/>
+              <focusTraversalPolicyProvider value="false"/>
+              <focusable value="true"/>
+              <font name="Tahoma" size="36" style="1"/>
+              <foreground color="-16777216"/>
+              <horizontalAlignment value="0"/>
+              <horizontalTextPosition value="0"/>
+              <inheritsPopupMenu value="true"/>
+              <opaque value="true"/>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="f09ff" class="javax.swing.JLabel" binding="JLabel2">
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                <minimum-size width="75" height="75"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-1"/>
+              <doubleBuffered value="false"/>
+              <enabled value="true"/>
+              <focusCycleRoot value="false"/>
+              <focusTraversalPolicyProvider value="false"/>
+              <focusable value="true"/>
+              <font name="Tahoma" size="36" style="1"/>
+              <foreground color="-16777216"/>
+              <horizontalAlignment value="0"/>
+              <horizontalTextPosition value="0"/>
+              <inheritsPopupMenu value="true"/>
+              <opaque value="true"/>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="1f824" class="javax.swing.JLabel" binding="JLabel3">
+            <constraints>
+              <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="6" hsize-policy="7" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                <minimum-size width="75" height="75"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-1"/>
+              <doubleBuffered value="false"/>
+              <enabled value="true"/>
+              <focusCycleRoot value="false"/>
+              <focusTraversalPolicyProvider value="false"/>
+              <focusable value="true"/>
+              <font name="Tahoma" size="36" style="1"/>
+              <foreground color="-16777216"/>
+              <horizontalAlignment value="0"/>
+              <horizontalTextPosition value="0"/>
+              <inheritsPopupMenu value="true"/>
+              <opaque value="true"/>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="72a63" class="javax.swing.JLabel" binding="JLabel7">
+            <constraints>
+              <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                <minimum-size width="75" height="75"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-1"/>
+              <doubleBuffered value="false"/>
+              <enabled value="true"/>
+              <focusCycleRoot value="false"/>
+              <focusTraversalPolicyProvider value="false"/>
+              <focusable value="true"/>
+              <font name="Tahoma" size="36" style="1"/>
+              <foreground color="-16777216"/>
+              <horizontalAlignment value="0"/>
+              <horizontalTextPosition value="0"/>
+              <inheritsPopupMenu value="true"/>
+              <opaque value="true"/>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="ef85a" class="javax.swing.JLabel" binding="JLabel8">
+            <constraints>
+              <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                <minimum-size width="75" height="75"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-1"/>
+              <doubleBuffered value="false"/>
+              <enabled value="true"/>
+              <focusCycleRoot value="false"/>
+              <focusTraversalPolicyProvider value="false"/>
+              <focusable value="true"/>
+              <font name="Tahoma" size="36" style="1"/>
+              <foreground color="-16777216"/>
+              <horizontalAlignment value="0"/>
+              <horizontalTextPosition value="0"/>
+              <inheritsPopupMenu value="true"/>
+              <opaque value="true"/>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="37e1e" class="javax.swing.JLabel" binding="JLabel9">
+            <constraints>
+              <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="6" hsize-policy="7" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                <minimum-size width="75" height="75"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-1"/>
+              <doubleBuffered value="false"/>
+              <enabled value="true"/>
+              <focusCycleRoot value="false"/>
+              <focusTraversalPolicyProvider value="false"/>
+              <focusable value="true"/>
+              <font name="Tahoma" size="36" style="1"/>
+              <foreground color="-16777216"/>
+              <horizontalAlignment value="0"/>
+              <horizontalTextPosition value="0"/>
+              <inheritsPopupMenu value="true"/>
+              <opaque value="true"/>
+              <text value=""/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <component id="5f42" class="javax.swing.JButton" binding="reiniciarButton" default-binding="true">
+        <constraints>
+          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <hideActionText value="false"/>
+          <opaque value="true"/>
+          <text value="Reiniciar"/>
+        </properties>
+      </component>
+      <component id="e91dd" class="javax.swing.JButton" binding="volverAlMenúButton" default-binding="true">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Volver al menú"/>
+        </properties>
+      </component>
+      <component id="2555a" class="javax.swing.JLabel" binding="Turno">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <minimum-size width="5" height="5"/>
+          </grid>
+        </constraints>
+        <properties>
+          <autoscrolls value="false"/>
+          <enabled value="true"/>
+          <foreground color="-16777216"/>
+          <text value=""/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>

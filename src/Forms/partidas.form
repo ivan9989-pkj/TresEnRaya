@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="Forms.partidas">
+  <grid id="27dc6" binding="partidasPanel" layout-manager="GridLayoutManager" row-count="4" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="10" left="10" bottom="10" right="10"/>
+    <constraints>
+      <xy x="219" y="123" width="385" height="284"/>
+    </constraints>
+    <properties>
+      <background color="-15461356"/>
+      <maximumSize width="150" height="150"/>
+      <minimumSize width="140" height="140"/>
+    </properties>
+    <border type="none" title=""/>
+    <children>
+      <component id="cb8f4" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <foreground color="-1"/>
+          <text value="Ranking"/>
+        </properties>
+      </component>
+      <component id="14269" class="javax.swing.JButton" binding="atrasButton" default-binding="true">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-13486793"/>
+          <foreground color="-1"/>
+          <text value="Atras"/>
+        </properties>
+      </component>
+      <component id="afb04" class="javax.swing.JButton" binding="jugadoresButton" default-binding="true">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="1" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-13486793"/>
+          <foreground color="-1"/>
+          <horizontalTextPosition value="0"/>
+          <icon value="img/usuario.png"/>
+          <text value="Jugadores"/>
+          <verticalTextPosition value="3"/>
+        </properties>
+      </component>
+      <scrollpane id="622a1">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="2" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <foreground color="-1"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="2ba52" class="javax.swing.JTable" binding="partidasTabla">
+            <constraints/>
+            <properties>
+              <foreground color="-12170933"/>
+              <selectionForeground color="-13486793"/>
+            </properties>
+          </component>
+        </children>
+      </scrollpane>
+      <component id="a3ea9" class="javax.swing.JButton" binding="partidasButton" default-binding="true">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-13486793"/>
+          <doubleBuffered value="true"/>
+          <foreground color="-1"/>
+          <horizontalAlignment value="0"/>
+          <horizontalTextPosition value="0"/>
+          <icon value="img/partida.png"/>
+          <text value="Partidas"/>
+          <verticalTextPosition value="3"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>
