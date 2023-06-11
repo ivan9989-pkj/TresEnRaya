@@ -11,7 +11,7 @@ Si entramos en "Jugar" encontraremos que nos pide el nombre de los dos jugadores
 Si entramos en "Administrar jugadores" nos encontraremos con cuatro botones, uno para añadir a un jugador nuevo (nos pedirá su nombre y la contraseña que quiera tener), otro para eliminar a un jugador a través de su ID, otro para modificar el nombre y/o contraseña de un usuario y el último para buscar el ID de un jugador a través de su nombre.
 Si entramos en "Ranking" nos encontraremos con una interfaz y dos botones, el botón de "Partidas" nos enseñará en la interfaz una lista con las partidas jugadas y sus datos pero si pulsamos en "Jugadores" nos enseñará la lista de los jugadores existentes y sus datos.
 ## Modelo E-R y Diagrama de clases
-![](https://hackmd.io/_uploads/rkXIGc7D2.png)
+![](https://imgur.com/Ft17OOr.png)
 
 
 ## Contribución
