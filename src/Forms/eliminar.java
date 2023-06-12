@@ -28,7 +28,7 @@ public class eliminar extends javax.swing.JFrame{
             int ID = Integer.parseInt(textField1.getText());
             Conexion conexion = new Conexion();
             conexion.eliminarJugador(ID);
-            eliminarLabel.setForeground(Color.darkGray);
+            eliminarLabel.setForeground(Color.white);
             eliminarLabel.setText("Eliminado con exito.");
             pack();
             textField1.setText("");

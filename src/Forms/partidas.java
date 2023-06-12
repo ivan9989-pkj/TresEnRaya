@@ -11,7 +11,6 @@ public class partidas extends javax.swing.JFrame{
     private JButton partidasButton;
     private JButton jugadoresButton;
     private JTable partidasTabla;
-    private JTable partidaTable;
     Conexion conexion = new Conexion();
 
     public partidas() {
@@ -47,5 +46,4 @@ public class partidas extends javax.swing.JFrame{
             }
         });
     }
-
 }

@@ -5,7 +5,6 @@ import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import java.io.*;
 import java.sql.*;
-import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -16,24 +15,35 @@ public class Conexion {
     //Se crea la conexión con la base de datos.
     public Conexion() {
         try {
-            String url = "jdbc:mysql://localhost";
+            //Para la conexión en cualquier otro ordenador
+            /*String url = "jdbc:mysql://localhost";
             String user = "root";
             String password = "";
-            conn1 = DriverManager.getConnection(url, user, password);
+            conn1 = DriverManager.getConnection(url, user, password);*/
+
+            //Para la conexión en el ordenador de clase
+            String user = "root";
+            String pass = "";
+            String ip = "localhost";
+            String puerto = "3307";
+
+            String cadena = "jdbc:mysql://" + ip + ":" + puerto;
+            conn1 = DriverManager.getConnection(cadena, user, pass);
         } catch (SQLException ex) {
-            System.out.println("ERROR:La dirección no es válida o el usuario clave");
+            System.out.println("ERROR:La dirección, usuario o clave no son válidos");
             ex.printStackTrace();
         }
     }
 
     /**
-     * Este método crea la base de datos. La crea a través de un script SQL que se encuentra en la carpeta BD del proyecto
+     * Este método crea la base de datos. La crea a través de un script SQL que se encuentra en la carpeta Archivos del proyecto
      * @param archivo
      */
     public void crearBD(String archivo) {
         FileReader fr = null;
         try {
             Statement stmt = conn1.createStatement();
+            stmt.execute("DROP DATABASE IF EXISTS tresraya;");
             stmt.execute("CREATE DATABASE tresraya;");
             stmt.execute("USE tresraya");
             File file = new File(archivo);

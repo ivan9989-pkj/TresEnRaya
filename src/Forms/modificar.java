@@ -13,6 +13,7 @@ public class modificar extends javax.swing.JFrame{
     private JPanel modificarPanel;
     private JPasswordField passwordField1;
     private JTextField textField2;
+    private JLabel mensajeLabel;
 
     public modificar() {
         setContentPane(modificarPanel);
@@ -30,6 +31,11 @@ public class modificar extends javax.swing.JFrame{
             String cont = passwordField1.getText();
             Conexion conexion = new Conexion();
             conexion.modificarJugador(ID, nombre, cont);
+            textField1.setText("");
+            textField2.setText("");
+            passwordField1.setText("");
+            mensajeLabel.setText("Jugador modificado con exito");
+            pack();
         }
     });
     //Se vuelve al menú de administrar jugadores

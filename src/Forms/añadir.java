@@ -31,7 +31,7 @@ public class añadir extends javax.swing.JFrame{
                Conexion con1 = new Conexion();
                con1.crearJugador(name, password);
                 //aqui va el código para crear jugadores
-                añadirLabel.setForeground(Color.DARK_GRAY);
+                añadirLabel.setForeground(Color.white);
                 añadirLabel.setText("Añadido con exito.");
                 pack();
                 textField1.setText("");

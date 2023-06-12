@@ -50,7 +50,7 @@ public class tresRaya extends javax.swing.JFrame {
             public void actionPerformed(ActionEvent e) {
                 //Aquí va el código de cuando pulsamos para crear la base de datos
                 Conexion conexion = new Conexion();
-                conexion.crearBD("./BD/tresRaya.sql");
+                conexion.crearBD("./Archivos/tresRaya.sql");
             }
         });
     }

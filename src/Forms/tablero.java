@@ -12,12 +12,14 @@ public class tablero extends javax.swing.JFrame implements ActionListener{
     private JButton reiniciarButton;
     private JButton volverAlMenúButton;
     private JLabel Turno;
-    String siguienteJuego = "O";
-    int contador;
-    boolean estado = true; //Si es true si se puede seguir escribiendo, si no no.
+    private String siguienteJuego = "O";
+    private int contador; //Para llevar el contador de los turnos, al llegar a 9 sin ganador el resultado es empate
+    private boolean estado = true; //Si es true si se puede seguir escribiendo, si no no.
+    private boolean ganador=false; //Comprueba si ganó alguien o es empate
     String turno = "X";
     JLabel[] lbs = new JLabel[9];
     Conexion conexion = new Conexion();
+    //Posiciones de victoria
     int[][] vic = {
         {1, 2, 3},
         {4, 5, 6},
@@ -133,6 +135,7 @@ public class tablero extends javax.swing.JFrame implements ActionListener{
                 }
                 setEstado(true);
                 setContador(0);
+                ganador=false;
             }
         });
         //Se vuelve al menú principal
@@ -153,7 +156,6 @@ public class tablero extends javax.swing.JFrame implements ActionListener{
         if (lbs[casilla-1].getText().equals("") && estado) {
             lbs[casilla - 1].setText(turno);
             cambiarTurno();
-            setContador(getContador()+1);
         }
         comprobarEmpate();
     }
@@ -173,6 +175,7 @@ public class tablero extends javax.swing.JFrame implements ActionListener{
             Turno.setText("Turno de " + j2);
         }
         comprobarGanador();
+        setContador(getContador()+1);
     }
 
 
@@ -193,6 +196,7 @@ public class tablero extends javax.swing.JFrame implements ActionListener{
                 conexion.aumentarVic(j1);
                 conexion.aumentarDer(j2);
                 conexion.aumentarPartida(j1, j2, j1);
+                ganador=true;
             }
             if (lbs[vic[i][0]-1].getText().equals("O") &&
                     lbs[vic[i][1]-1].getText().equals("O") &&
@@ -205,6 +209,7 @@ public class tablero extends javax.swing.JFrame implements ActionListener{
                 conexion.aumentarVic(j2);
                 conexion.aumentarDer(j1);
                 conexion.aumentarPartida(j1, j2, j2);
+                ganador=true;
             }
         }
     }
@@ -213,7 +218,7 @@ public class tablero extends javax.swing.JFrame implements ActionListener{
      * En caso de que se llenen las 9 casillas y nadie haya ganado se tomará como empate, añadiendo los datos a las tablas
      */
     public void comprobarEmpate(){
-        if (getContador() == 9){
+        if (getContador() == 9 && !ganador){
             Turno.setText("Empate!!");
             conexion.aumentarTotal(j1);
             conexion.aumentarTotal(j2);
