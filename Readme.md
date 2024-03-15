@@ -1,4 +1,4 @@
-# Tres en Raya
+# Tres en Raya-Proyecto-Cambiado-Por-mi-ivan
 
 
 ## Instalación
